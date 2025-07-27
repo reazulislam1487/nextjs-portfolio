@@ -7,14 +7,14 @@ export default function Projects() {
       title: "Green Circle",
       description:
         "Full-stack gardening subscription app with slot management, Stripe payments, and filtering.",
-      live: "https://green-circle.vercel.app",
+      live: "https://green-circle-by-reaz.netlify.app",
       github: "https://github.com/reazulislam/green-circle",
     },
     {
       title: "Marathon Zone",
       description:
         "Marathon event platform with registration, search, dark mode, and admin dashboard.",
-      live: "https://marathon-zone.vercel.app",
+      live: "https://marathonzonebyreaz.netlify.app",
       github: "https://github.com/reazulislam/marathon-zone",
     },
   ];
