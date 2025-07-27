@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
-      <body>
+      <body className="bg-[#F9F9F6] text-[#2D3748]">
         <Navbar />
         <main className="min-h-screen px-4 md:px-10 py-8">{children}</main>
         <Footer></Footer>
