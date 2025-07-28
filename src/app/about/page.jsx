@@ -1,31 +1,39 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
+'use client';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-[#F9F9F6] dark:bg-gray-900 px-6 md:px-20 py-16 transition-colors">
+    <section className="min-h-screen bg-white text-black dark:bg-black dark:text-white px-6 md:px-20 py-14 transition-colors">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="max-w-7xl mx-auto space-y-6"
       >
-        <div className="flex-1">
-          <img
-            src="/profile.png"
-            alt="Reazul Islam Reaz"
-            className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-600 shadow-lg mx-auto"
-          />
-        </div>
-        <div className="flex-1 text-center md:text-left">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-            I'm Reazul Islam Reaz
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            A passionate <span className="font-semibold text-blue-600">MERN Stack Developer</span> from Bangladesh. I specialize in building full-stack web applications using technologies like <strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. I love crafting clean and responsive user interfaces with <strong>Tailwind CSS</strong> and turning complex problems into simple, beautiful solutions.
-          </p>
+        <h2 className="text-3xl md:text-5xl font-bold border-b-2 border-black dark:border-white pb-4 inline-block">
+          About Me
+        </h2>
+
+        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+          I'm <span className="font-semibold text-black dark:text-white">Reazul Islam Reaz</span>, a passionate MERN Stack Developer from Bangladesh. Currently pursuing my honors in Political Science, I’ve also dived deep into the world of web development to build responsive, full-stack applications that solve real-world problems.
+        </p>
+
+        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+          With hands-on experience in React, Node.js, Express, MongoDB, and Firebase, I enjoy bringing ideas to life through clean code and intuitive interfaces. Whether it's developing a personal project or collaborating on a team, I strive for functionality, performance, and accessibility in everything I build.
+        </p>
+
+        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+          Outside of coding, I’m deeply interested in journalism, politics, and learning new technologies. My goal is to blend technical skills with communication to make meaningful impact — online and offline.
+        </p>
+
+        <div className="pt-6">
+          <a
+            href="/contact"
+            className="inline-block px-6 py-3 rounded-xl bg-black text-white dark:bg-white dark:text-black hover:opacity-90 transition"
+          >
+            Let's Connect
+          </a>
         </div>
       </motion.div>
     </section>
