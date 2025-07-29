@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
+import Image from "next/image";
 
 const links = [
   { href: "/", label: "Home" },
@@ -25,39 +26,52 @@ export default function Navbar() {
 
   return (
     <nav className=" shadow-md">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold">
-              Reazul
+              <div className="relative w-16 h-16">
+                {" "}
+                {/* or any width/height */}
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Link>
           </div>
 
-          {/* Desktop Links */}
           <div className="hidden md:flex md:space-x-8">
             {links.map(({ href, label }) => {
               const isActive = pathname === href;
               return (
-                <Link
-                  key={href}
-                  href={href}
-                  className={`px-3 py-2 font-medium transition ${
-                    isActive ? "underline" : "hover:underline"
-                  }`}
-                >
-                  {label}
-                </Link>
+                <div key={href} className="relative group pb-2">
+                  <Link
+                    href={href}
+                    className={`px-3 py-2 font-medium transition ${
+                      isActive
+                        ? "underline underline-offset-4 decoration-2"
+                        : ""
+                    }`}
+                  >
+                    {label}
+                    {!isActive && (
+                      <span className="absolute left-0 bottom-2 h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+                    )}
+                  </Link>
+                </div>
               );
             })}
           </div>
-
           {/* Right controls */}
           <div className="flex items-center space-x-4">
             {/* Theme toggle */}
             <button
               onClick={() => setTheme(current === "dark" ? "light" : "dark")}
-              className="p-2 rounded-md transition"
+              className="p-2 cursor-pointer rounded-md transition"
               aria-label="Toggle Dark Mode"
             >
               {current === "dark" ? <FaSun size={18} /> : <FaMoon size={18} />}

@@ -82,10 +82,9 @@ export default function Home() {
               View Projects
             </a>
             <a
-              href="/Reazul_Islam_Reaz_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl bg-white text-black dark:bg-black dark:text-white hover:opacity-90 transition"
+              href="/Reazul_Islam_Reaz_MERN_Stack_Developer_Resume.pdf"
+              download="Reazul_Islam_Reaz_MERN_Stack_Developer_Resume.pdf"
+              className="inline-block px-6 py-3 rounded-xl bg-white text-black dark:bg-black dark:text-white hover:opacity-90 transition"
             >
               Resume
             </a>
@@ -127,7 +126,7 @@ export default function Home() {
         >
           <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-black dark:border-white">
             <Image
-              src="/reazul-profile1.jpg"
+              src="/reazul-profile.jpg"
               alt="Reazul Islam Reaz"
               width={300}
               height={300}
