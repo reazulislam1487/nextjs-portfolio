@@ -1,30 +1,20 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// app/layout.jsx    ← SERVER component, no "use client"
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Providers from "./components/Providers";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata = {
-  title: "Portfolio",
-  description: "Discover my work and projects",
+  title: "My Next.js 15 Site",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#F9F9F6] text-[#2D3748]">
-        <Navbar />
-        <main className="min-h-screen px-4 md:px-10 py-8">{children}</main>
-        <Footer></Footer>
+      <body>
+        <Providers>
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

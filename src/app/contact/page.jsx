@@ -6,26 +6,26 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="min-h-screen bg-white text-black dark:bg-black dark:text-white px-6 md:px-20 py-14 transition-colors">
+    <section className="min-h-screen  px-6 md:px-20 py-14 transition-colors">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto"
       >
-        <h2 className="text-3xl md:text-5xl font-bold border-b-2 border-black dark:border-white pb-4 mb-12 inline-block">
+        <h2 className="text-3xl md:text-5xl font-bold border-b-2 pb-4 mb-12 inline-block">
           Contact Me
         </h2>
 
         <div className="grid md:grid-cols-2 gap-10">
           {/* Contact Info with Icons */}
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 dark:text-gray-300">
+            <p className="text-lg ">
               Feel free to reach out for collaborations, freelance work, or just
               a friendly chat!
             </p>
 
-            <div className="space-y-4 text-base text-gray-800 dark:text-gray-200">
+            <div className="space-y-4 text-base ">
               <p className="flex items-center gap-3">
                 <FiMail className="text-xl" />
                 <span>reazulislam1487@gmail.com</span>
@@ -66,7 +66,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 required
-                className="w-full px-4 py-2 mt-1 border border-black dark:border-white bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
               />
             </div>
             <div>
@@ -77,7 +77,7 @@ export default function Contact() {
                 type="email"
                 id="email"
                 required
-                className="w-full px-4 py-2 mt-1 border border-black dark:border-white bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
               />
             </div>
             <div>
@@ -88,12 +88,12 @@ export default function Contact() {
                 id="message"
                 rows="4"
                 required
-                className="w-full px-4 py-2 mt-1 border border-black dark:border-white bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
               ></textarea>
             </div>
             <button
               type="submit"
-              className="px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-xl hover:opacity-90 transition"
+              className="px-6 py-3  dark:bg-black dark:text-white rounded-xl hover:opacity-90 transition"
             >
               Send Message
             </button>

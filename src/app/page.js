@@ -1,20 +1,20 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const texts = [
-  'MERN Stack Developer passionate about clean code.',
-  'Responsive design enthusiast.',
-  'Building full-stack web applications.',
+  "MERN Stack Developer passionate about clean code.",
+  "Responsive design enthusiast.",
+  "Building full-stack web applications.",
 ];
 
 export default function Home() {
   // Typing effect state for heading
   const fullText = "I'm Reazul Islam Reaz";
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("");
   const [index, setIndex] = useState(0);
 
   // Text slider index for below heading
@@ -42,7 +42,7 @@ export default function Home() {
   const iconSize = 28;
 
   return (
-    <main className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors flex items-center justify-center px-6 md:px-16">
+    <main className="min-h-screen  transition-colors flex items-center justify-center px-6 md:px-16">
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-10 items-center py-20">
         {/* Left: Info Section */}
         <motion.div
@@ -66,7 +66,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                className="text-lg md:text-xl text-gray-700 dark:text-gray-300 absolute"
+                className="text-lg md:text-xl absolute"
               >
                 {texts[sliderIndex]}
               </motion.p>
@@ -77,7 +77,7 @@ export default function Home() {
           <div className="flex gap-4">
             <a
               href="/projects"
-              className="px-6 py-3 rounded-xl bg-black text-white dark:bg-white dark:text-black hover:opacity-90 transition"
+              className="px-6 py-3 rounded-xl bg-white text-black dark:bg-black dark:text-white hover:opacity-90 transition"
             >
               View Projects
             </a>
@@ -85,7 +85,7 @@ export default function Home() {
               href="/Reazul_Islam_Reaz_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition"
+              className="px-6 py-3 rounded-xl bg-white text-black dark:bg-black dark:text-white hover:opacity-90 transition"
             >
               Resume
             </a>
@@ -137,17 +137,6 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-
-      {/* Typing cursor animation */}
-      <style jsx>{`
-        @keyframes blink {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0; }
-        }
-        .animate-blink {
-          animation: blink 1s step-start infinite;
-        }
-      `}</style>
     </main>
   );
 }
