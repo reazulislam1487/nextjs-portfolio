@@ -52,13 +52,13 @@ export default function Home() {
           className="space-y-6"
         >
           {/* Typing Heading */}
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight h-12 md:h-20">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight h-12 md:h-12">
             {typedText}
             <span className="inline-block w-1 h-7 bg-black dark:bg-white animate-blink ml-1"></span>
           </h1>
 
           {/* Text Slider */}
-          <div className="h-13 md:h-12 relative overflow-hidden z-50">
+          <div className="h-13 md:h-8 relative overflow-hidden z-50">
             <AnimatePresence mode="wait">
               <motion.p
                 key={sliderIndex}
