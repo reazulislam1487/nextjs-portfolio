@@ -24,11 +24,11 @@ export default function About() {
         </p>
 
         <p className="text-lg leading-relaxed ">
-          With hands-on experience in React, Node.js, Express, MongoDB, and
-          Firebase, I enjoy bringing ideas to life through clean code and
-          intuitive interfaces. Whether it's developing a personal project or
-          collaborating on a team, I strive for functionality, performance, and
-          accessibility in everything I build.
+          With hands-on experience in JavaScript, TypeScript, React, NextJs,
+          Node.js, Express, MongoDB, and Firebase, I enjoy bringing ideas to
+          life through clean code and intuitive interfaces. Whether it's
+          developing a personal project or collaborating on a team, I strive for
+          functionality, performance, and accessibility in everything I build.
         </p>
 
         <p className="text-lg leading-relaxed">
@@ -44,7 +44,6 @@ export default function About() {
           >
             Let's Connect
           </a>
-          
         </div>
       </motion.div>
     </section>

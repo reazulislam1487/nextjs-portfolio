@@ -32,7 +32,7 @@ export default function Contact() {
               </p>
               <p className="flex items-center gap-3">
                 <FaWhatsapp className="text-xl " />
-                <span>+88017708077282</span>
+                <span>+8801770807782</span>
               </p>
               <p className="flex items-center gap-3">
                 <FiMapPin className="text-xl" />
@@ -41,7 +41,7 @@ export default function Contact() {
 
               <div className="flex items-center gap-5 pt-4 text-xl">
                 <a
-                  href="https://github.com/reazulislamreaz"
+                  href="https://github.com/reazulislam1487"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition"
@@ -49,7 +49,7 @@ export default function Contact() {
                   <FaGithub />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/reazulislamreaz"
+                  href="https://www.linkedin.com/in/reazulislam1487"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition"

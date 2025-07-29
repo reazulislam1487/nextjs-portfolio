@@ -52,13 +52,13 @@ export default function Home() {
           className="space-y-6"
         >
           {/* Typing Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight h-14 md:h-20">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight h-12 md:h-20">
             {typedText}
             <span className="inline-block w-1 h-7 bg-black dark:bg-white animate-blink ml-1"></span>
           </h1>
 
           {/* Text Slider */}
-          <div className="h-10 md:h-12 relative overflow-hidden">
+          <div className="h-13 md:h-12 relative overflow-hidden z-50">
             <AnimatePresence mode="wait">
               <motion.p
                 key={sliderIndex}
@@ -93,7 +93,7 @@ export default function Home() {
           {/* Social Icons */}
           <div className="flex gap-5 pt-4 text-xl">
             <a
-              href="https://github.com/reazulislamreaz"
+              href="https://github.com/reazulislam1487"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition"
@@ -101,7 +101,7 @@ export default function Home() {
               <FaGithub size={iconSize} />
             </a>
             <a
-              href="https://www.linkedin.com/in/reazulislamreaz"
+              href="https://www.linkedin.com/in/reazulislam1487"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition"

@@ -1,10 +1,9 @@
-// app/layout.jsx    ← SERVER component, no "use client"
 import "./globals.css";
 import Providers from "./components/Providers";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "My Next.js 15 Site",
+  title: "Reazul Islam Reaz",
 };
 
 export default function RootLayout({ children }) {

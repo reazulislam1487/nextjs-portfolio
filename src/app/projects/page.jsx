@@ -16,6 +16,11 @@ const projectsData = [
     images: ["/havenkeys-1.png", "/havenkeys-2.png", "/havenkeys-3.png"],
     live: "https://haven-keys.web.app/",
     code: "https://github.com/reazulislam1487",
+    keyChallenges:
+      "Faced challenges implementing custom authentication with role-based access control, verifying user roles on the backend, managing conditional modals, ensuring responsiveness across devices, and securing data update modals.",
+
+    futureEnhancements:
+      "Plan to add a performance analytics, support for multiple payment methods, and push notifications using service workers.",
   },
   {
     title: "Marathon Zone",
@@ -25,12 +30,17 @@ const projectsData = [
     images: ["/marathon-1.png", "/marathon-2.png", "/marathon-3.png"],
     live: "https://marathonzonebyreaz.netlify.app/",
     code: "https://github.com/reazulislam1487/marathon-zone",
+    keyChallenges:
+      " Managing authentication and conditional modals, ensuring responsiveness across devices,and implementing a secure data update modal.",
+    futureEnhancements:
+      " Add admin dashboard, performance analytics, and push notifications using service workers.",
   },
+
   {
     title: "Green Circle",
     description:
       "A gardening subscription platform with secure payments, real-time slot booking, and full admin dashboard.",
-    features: ["React", "Redux", "Express", "MongoDB"],
+    features: ["JavaScript", "React", "Express", "MongoDB"],
     images: [
       "/green-circle-1.png",
       "/green-circle-2.png",
@@ -38,16 +48,23 @@ const projectsData = [
     ],
     live: "https://green-circle-by-reaz.netlify.app",
     code: "https://github.com/reazulislam1487/green-circle",
+    keyChallenges:
+      " Implementing secure user roles with JWT, designing a clean reusable UI theme, and structuring a full-stack MERN app efficiently.",
+    futureEnhancements:
+      "Integrate Stripe for payments, build a mobile-friendly PWA, and enhance CMS-like admin tools.",
   },
 
   {
     title: "Event Hub",
-    description:
-      "A real estate app with secure login, property filters, and Stripe-powered premium listing options.",
-    features: ["React", "Express", "Stripe", "JWT"],
-    images: ["/havenkeys-1.png", "/havenkeys-2.png", "/havenkeys-3.png"],
+    description: `Event Hub is a full-stack MERN app for creating, managing, and joining events—designed to be secure, responsive, and user-friendly for organizers and attendees alike.`,
+    features: ["React", "Express", "Custom Auth", "JWT"],
+    images: ["/event-hub.png", "/event-hub1.png", "/event-hub2.png"],
     live: "https://event-hub-by-reaz.netlify.app",
     code: "https://github.com/reazulislam1487/event-hub-client",
+    keyChallenges:
+      " Faced challenges implementing a custom authentication system, managing conditional modals, ensuring full responsiveness across all devices, and securing sensitive data updates through protected modals.",
+    futureEnhancements:
+      " Add admin dashboard, performance analytics, and push notifications using service workers.",
   },
 ];
 
@@ -121,7 +138,7 @@ export default function Projects() {
             </div>
             <button
               onClick={() => setSelectedProject(project)}
-              className="mt-2 px-4 py-2 border rounded hover:opacity-90 transition text-sm"
+              className="mt-2 px-4 py-2 cursor-pointer border rounded hover:opacity-90 transition text-sm"
             >
               View Details
             </button>
@@ -147,7 +164,7 @@ export default function Projects() {
               className="p-6 rounded-lg w-full max-w-6xl relative overflow-y-auto max-h-[90vh]  shadow-xl"
             >
               <button
-                className="absolute top-2 right-3 dark:text-black text-3xl z-50 font-bold"
+                className="absolute top-1 cursor-pointer right-3 dark:text-black text-3xl ld:text-5xl z-50 font-bold"
                 onClick={() => setSelectedProject(null)}
               >
                 &times;
@@ -156,7 +173,7 @@ export default function Projects() {
               <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={10}
-                slidesPerView={2}
+                slidesPerView={1}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 navigation
                 pagination={{ clickable: true }}
@@ -167,7 +184,7 @@ export default function Projects() {
                     <img
                       src={img}
                       alt={`${selectedProject.title} modal ${idx + 1}`}
-                      className="w-full h-48 sm:h-64 object-cover rounded"
+                      className="w-full h-48 sm:h-100  rounded"
                     />
                   </SwiperSlide>
                 ))}
@@ -176,15 +193,31 @@ export default function Projects() {
               <h3 className="text-xl dark:text-black font-bold mb-2">
                 {selectedProject.title}
               </h3>
+
               <p className="mb-2 dark:text-black text-sm">
                 {selectedProject.description}
               </p>
+
               <ul className="list-disc dark:text-black list-inside text-sm mb-4">
                 {selectedProject.features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
               </ul>
-              <div className="flex flex-wrap dark:text-black gap-6">
+
+              {/* Additional Details */}
+              <div className="text-sm dark:text-black space-y-2">
+                <div>
+                  <strong>Key Challenges:</strong>{" "}
+                  {selectedProject.keyChallenges}
+                </div>
+
+                <div>
+                  <strong>Future Enhancements:</strong>{" "}
+                  {selectedProject.futureEnhancements}
+                </div>
+              </div>
+
+              <div className="flex flex-wrap dark:text-black gap-6 mt-4">
                 <a
                   href={selectedProject.live}
                   target="_blank"
