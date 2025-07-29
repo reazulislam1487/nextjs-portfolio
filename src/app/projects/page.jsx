@@ -61,7 +61,7 @@ export default function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-5xl  border-b-2  font-bold text-center mb-10"
+        className="text-3xl md:text-5xl  border-b-2 inline-block pb-4  font-bold text-center mb-10"
       >
         Featured Projects
       </motion.h2>
