@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiMail, FiMapPin } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -29,6 +29,10 @@ export default function Contact() {
               <p className="flex items-center gap-3">
                 <FiMail className="text-xl" />
                 <span>reazulislam1487@gmail.com</span>
+              </p>
+              <p className="flex items-center gap-3">
+                <FaWhatsapp className="text-xl " />
+                <span>+88017708077282</span>
               </p>
               <p className="flex items-center gap-3">
                 <FiMapPin className="text-xl" />
