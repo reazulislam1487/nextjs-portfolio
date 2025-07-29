@@ -36,7 +36,7 @@ export default function Contact() {
               </p>
               <p className="flex items-center gap-3">
                 <FiMapPin className="text-xl" />
-                <span>Bangladesh (Remote Available)</span>
+                <span>Faridpur, Bangladesh (Remote Available)</span>
               </p>
 
               <div className="flex items-center gap-5 pt-4 text-xl">
@@ -97,7 +97,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="px-6 py-3  dark:bg-black dark:text-white rounded-xl hover:opacity-90 transition"
+              className="px-6 py-3  cursor-pointer dark:bg-black dark:text-white rounded-xl hover:opacity-90 transition"
             >
               Send Message
             </button>
