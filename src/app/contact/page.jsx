@@ -61,47 +61,50 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <form className="space-y-6 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                required
-                className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                required
-                className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium">
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows="4"
-                required
-                className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="px-6 py-3  cursor-pointer dark:bg-black dark:text-white rounded-xl hover:opacity-90 transition"
-            >
-              Send Message
-            </button>
-          </form>
+
+          <div className="rounded-xl p-6 shadow-lg hover:shadow-xl transition">
+            <form className="space-y-6 ">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows="4"
+                  required
+                  className="w-full px-4 py-2 mt-1 border bg-transparent rounded-md focus:outline-none focus:ring-2 "
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="px-6 py-3  cursor-pointer dark:bg-black dark:text-white rounded-xl hover:opacity-90 transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </motion.div>
     </section>
