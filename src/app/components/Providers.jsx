@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 export default function Providers({ children }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system">
+    <ThemeProvider attribute="class" defaultTheme="light">
       <Navbar />
       {children}
     </ThemeProvider>
