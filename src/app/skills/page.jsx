@@ -144,7 +144,7 @@ export default function Skills() {
                 initial={{ opacity: 0, scale: 0.7 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="text-4xl md:text-5xl mb-2 animate-pulse"
+                className="text-4xl md:text-5xl mb-2 "
               >
                 {skill.icon}
               </motion.div>
@@ -174,7 +174,7 @@ export default function Skills() {
                 initial={{ opacity: 0, scale: 0.7 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="text-4xl md:text-5xl mb-2 animate-pulse"
+                className="text-4xl md:text-5xl mb-2 "
               >
                 {skill.icon}
               </motion.div>

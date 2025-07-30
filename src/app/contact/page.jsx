@@ -61,7 +61,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <form className="space-y-6">
+          <form className="space-y-6 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
             <div>
               <label htmlFor="name" className="block text-sm font-medium">
                 Name
