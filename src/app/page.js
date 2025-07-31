@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen  transition-colors flex items-center justify-center px-6 md:px-16">
-      <div className="max-w-7xl w-full grid md:grid-cols-2 gap-10 items-center py-20">
+      <div className="max-w-7xl w-full flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center py-20">
         {/* Left: Info Section */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
