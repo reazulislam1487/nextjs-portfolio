@@ -58,8 +58,9 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="space-y-6">
             <p className="text-lg ">
-              Feel free to reach out for collaborations, freelance work, or just
-              a friendly chat!
+              I'm always open to discussing new opportunities, interesting
+              projects, or just having a chat about technology and development.
+              Feel free to reach out!
             </p>
 
             <div className="space-y-4 text-base ">
