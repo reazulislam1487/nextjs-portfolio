@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const texts = [
   "MERN Stack Developer passionate about clean code.",
@@ -62,14 +63,16 @@ export default function Home() {
             {/* Typing Heading */}
             <div className="space-y-2">
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                transition={{ duration: 0.8 }}
+                className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r 
+                       from-purple-400 via-pink-400 to-cyan-400 tracking-[0.3em] uppercase mb-6
+                       animate-pulse"
               >
-                Welcome to my portfolio
+                ✦ Welcome to my portfolio ✦
               </motion.div>
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight text-white">
+              <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight text-white">
                 <span className="bg-gradient-to-r from-white via-gray-300 to-gray-400 bg-clip-text text-transparent">
                   {typedText}
                 </span>
@@ -181,7 +184,14 @@ export default function Home() {
                 <div className="w-full h-full rounded-full overflow-hidden bg-gray-900">
                   {/* Placeholder for profile image */}
                   <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                    <div className="text-6xl text-gray-600">👨‍💻</div>
+                    <div className="text-6xl text-gray-600">
+                      <Image
+                        src="/reazul-profile.jpg"
+                        alt="Description of image"
+                        width={500}
+                        height={300}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
