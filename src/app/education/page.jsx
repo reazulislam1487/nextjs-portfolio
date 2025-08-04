@@ -24,7 +24,7 @@ export default function Education() {
         className="max-w-7xl mx-auto relative z-10"
       >
         {/* Enhanced Header */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="text-4xl md:text-6xl font-black mb-4 relative inline-block">
             <span
               className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent
@@ -35,8 +35,7 @@ export default function Education() {
             {/* Animated underline */}
           </h2>
           <p className="text-lg text-gray-400 mt-4 max-w-2xl font-light">
-            My academic journey and professional development in technology and
-            social sciences
+            My academic journey and professional development in technology
           </p>
         </div>
 

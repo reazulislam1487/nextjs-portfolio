@@ -197,7 +197,7 @@ export default function Skills() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
             {[
               { number: "11+", label: "Technologies" },
-              { number: "2+", label: "Years Experience" },
+              { number: "1+", label: "Years Experience" },
               { number: "50+", label: "Projects Built" },
             ].map((stat, index) => (
               <div
