@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           {children}
-          <Education></Education>
+          {/* <Education></Education> */}
           <Footer />
         </Providers>
       </body>
