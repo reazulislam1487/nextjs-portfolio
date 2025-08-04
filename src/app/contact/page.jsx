@@ -47,48 +47,7 @@ export default function Contact() {
       className="min-h-screen px-4 sm:px-6 md:px-20 py-14 transition-colors relative overflow-hidden
                  bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{ duration: 8, repeat: Infinity }}
-          className="absolute top-20 left-20 w-80 h-80 bg-gradient-to-r from-purple-500/10 to-pink-500/10 
-                     rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.1, 0.15, 0.1],
-            x: [0, 30, 0],
-          }}
-          transition={{ duration: 10, repeat: Infinity }}
-          className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-l from-cyan-500/10 to-blue-500/10 
-                     rounded-full blur-3xl"
-        />
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={i}
-            animate={{
-              y: [0, -25, 0],
-              opacity: [0.2, 0.6, 0.2],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 4 + i * 0.5,
-              repeat: Infinity,
-              delay: i * 0.3,
-            }}
-            className="absolute w-1 h-1 bg-white/40 rounded-full blur-sm"
-            style={{
-              left: `${10 + i * 12}%`,
-              top: `${15 + i * 10}%`,
-            }}
-          />
-        ))}
-      </div>
+  
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.03)_1px,transparent_1px)] bg-[size:50px_50px] opacity-60"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]"></div>
@@ -104,22 +63,12 @@ export default function Contact() {
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
               Contact Me
             </span>
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: "100%" }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full shadow-lg shadow-purple-500/25"
-            />
+            <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full shadow-lg shadow-purple-500/25" />
           </h2>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            className="text-base sm:text-lg text-gray-400 mt-4 max-w-2xl font-light text-center md:text-left mx-auto md:mx-0"
-          >
+          <p className="text-base sm:text-lg text-gray-400 mt-4 max-w-2xl font-light text-center md:text-left mx-auto md:mx-0">
             Let's connect and discuss how we can work together on your next
             project
-          </motion.p>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -141,31 +90,25 @@ export default function Contact() {
                 </p>
 
                 <div className="space-y-6 text-base">
-                  <motion.div
-                    whileHover={{ x: 5, scale: 1.02 }}
-                    className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-2xl border border-gray-700/30 hover:border-purple-500/40 transition-all duration-300 group/item cursor-pointer"
-                  >
+                  <div className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-2xl border border-gray-700/30 hover:border-purple-500/40 transition-all duration-300 group/item cursor-pointer">
                     <div className="p-3 bg-purple-500/10 rounded-xl border border-purple-500/20 group-hover/item:bg-purple-500/20 transition-colors duration-300">
                       <FiMail className="text-xl text-purple-400 group-hover/item:text-purple-300" />
                     </div>
                     <span className="text-gray-300 group-hover/item:text-white transition-colors duration-300">
                       reazulislam1487@gmail.com
                     </span>
-                  </motion.div>
+                  </div>
 
-                  <motion.div
-                    whileHover={{ x: 5, scale: 1.02 }}
-                    className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-2xl border border-gray-700/30 hover:border-green-500/40 transition-all duration-300 group/item cursor-pointer"
-                  >
+                  <div className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-2xl border border-gray-700/30 hover:border-green-500/40 transition-all duration-300 group/item cursor-pointer">
                     <div className="p-3 bg-green-500/10 rounded-xl border border-green-500/20 group-hover/item:bg-green-500/20 transition-colors duration-300">
                       <FaWhatsapp className="text-xl text-green-400 group-hover/item:text-green-300" />
                     </div>
                     <span className="text-gray-300 group-hover/item:text-white transition-colors duration-300">
                       +8801770807782
                     </span>
-                  </motion.div>
+                  </div>
 
-                  <motion.div
+                  <div
                     whileHover={{ x: 5, scale: 1.02 }}
                     className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-2xl border border-gray-700/30 hover:border-cyan-500/40 transition-all duration-300 group/item cursor-pointer"
                   >
@@ -175,33 +118,29 @@ export default function Contact() {
                     <span className="text-gray-300 group-hover/item:text-white transition-colors duration-300">
                       Faridpur, Bangladesh (Remote Available)
                     </span>
-                  </motion.div>
+                  </div>
 
                   <div className="flex items-center gap-6 pt-6">
                     <span className="text-gray-400 font-medium">
                       Follow me:
                     </span>
                     <div className="flex items-center gap-4">
-                      <motion.a
-                        whileHover={{ scale: 1.2, rotate: 5 }}
-                        whileTap={{ scale: 0.9 }}
+                      <a
                         href="https://github.com/reazulislam1487"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 bg-gray-700/30 rounded-xl border border-gray-600/30 hover:border-gray-400/50 hover:bg-gray-600/40 transition-all duration-300 text-gray-400 hover:text-white shadow-lg hover:shadow-xl"
                       >
                         <FaGithub className="text-xl" />
-                      </motion.a>
-                      <motion.a
-                        whileHover={{ scale: 1.2, rotate: -5 }}
-                        whileTap={{ scale: 0.9 }}
+                      </a>
+                      <a
                         href="https://www.linkedin.com/in/reazulislam1487"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 bg-blue-600/20 rounded-xl border border-blue-500/30 hover:border-blue-400/50 hover:bg-blue-500/30 transition-all duration-300 text-blue-400 hover:text-blue-300 shadow-lg hover:shadow-xl"
                       >
                         <FaLinkedin className="text-xl" />
-                      </motion.a>
+                      </a>
                     </div>
                   </div>
                 </div>

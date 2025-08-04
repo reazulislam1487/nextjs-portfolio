@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
@@ -9,51 +8,6 @@ export default function Education() {
       className="min-h-screen px-6 md:px-20 py-14 transition-colors relative overflow-hidden
                        bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
-      {/* Enhanced animated background */}
-      <div className="absolute inset-0">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{ duration: 8, repeat: Infinity }}
-          className="absolute top-32 left-32 w-80 h-80 bg-gradient-to-r from-blue-500/10 to-purple-500/10 
-                     rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.1, 0.15, 0.1],
-            x: [0, 30, 0],
-          }}
-          transition={{ duration: 10, repeat: Infinity }}
-          className="absolute bottom-32 right-32 w-96 h-96 bg-gradient-to-l from-emerald-500/10 to-teal-500/10 
-                     rounded-full blur-3xl"
-        />
-
-        {/* Floating particles */}
-        {[...Array(6)].map((_, i) => (
-          <motion.div
-            key={i}
-            animate={{
-              y: [0, -20, 0],
-              opacity: [0.2, 0.5, 0.2],
-              scale: [1, 1.1, 1],
-            }}
-            transition={{
-              duration: 3 + i,
-              repeat: Infinity,
-              delay: i * 0.5,
-            }}
-            className="absolute w-1 h-1 bg-white/30 rounded-full blur-sm"
-            style={{
-              left: `${15 + i * 15}%`,
-              top: `${20 + i * 12}%`,
-            }}
-          />
-        ))}
-      </div>
-
       {/* Grid pattern overlay */}
       <div
         className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.03)_1px,transparent_1px)] 
@@ -79,23 +33,11 @@ export default function Education() {
               Education
             </span>
             {/* Animated underline */}
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: "100%" }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 
-                         rounded-full shadow-lg shadow-blue-500/25"
-            />
           </h2>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            className="text-lg text-gray-400 mt-4 max-w-2xl font-light"
-          >
+          <p className="text-lg text-gray-400 mt-4 max-w-2xl font-light">
             My academic journey and professional development in technology and
             social sciences
-          </motion.p>
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
