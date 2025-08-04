@@ -196,11 +196,11 @@ export default function Projects() {
     setSelectedProject(null);
   };
 
-  const handleModalBackdropClick = (e) => {
-    if (e.target === e.currentTarget) {
-      setSelectedProject(null);
-    }
-  };
+  // const handleModalBackdropClick = (e) => {
+  //   if (e.target === e.currentTarget) {
+  //     setSelectedProject(null);
+  //   }
+  // };
 
   return (
     <section className="min-h-screen px-4 sm:px-6 md:px-20 py-14 transition-colors relative overflow-hidden bg-gradient-to-br from-slate-950 via-gray-900 to-black">
@@ -225,7 +225,12 @@ export default function Projects() {
       {/* Radial gradient overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-7xl mx-auto relative z-10"
+      >
         <h2 className="text-3xl md:text-5xl font-black mb-12 relative inline-block">
           <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
             Featured Projects
@@ -424,7 +429,7 @@ export default function Projects() {
             </motion.div>
           )}
         </AnimatePresence> */}
-      </div>
+      </motion.div>
     </section>
   );
 }

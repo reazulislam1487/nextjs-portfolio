@@ -165,16 +165,21 @@ export default function Skills() {
       {/* Radial gradient overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-7xl mx-auto relative z-10"
+      >
         {/* Simplified Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-black mb-4 relative inline-block">
+          <h2 className="text-3xl md:text-5xl font-black mb-2 relative inline-block">
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
               My Skills
             </span>
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light mt-6">
+          <p className="text-lg md:text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed font-light mt-6">
             Cutting-edge technologies and frameworks I leverage to craft
             exceptional digital experiences and scalable solutions
           </p>
@@ -223,7 +228,7 @@ export default function Skills() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
