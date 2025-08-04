@@ -1,3 +1,4 @@
+
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
@@ -101,21 +102,21 @@ const skills = [
 const SkillCard = ({ skill, delay = 0 }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.8, rotateY: -20 }}
-      animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+      initial={{ opacity: 0, scale: 0.8, y: 50 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ delay, duration: 0.6, type: "spring", stiffness: 100 }}
       whileHover={{
-        scale: 1.00,
-        y: -5,
-        rotateY: 5,
+        scale: 1.05,
+        y: -8,
         transition: { duration: 0.3, type: "spring", stiffness: 300 },
       }}
       whileTap={{ scale: 0.95 }}
-      className="group relative min-w-[220px] h-36 cursor-pointer perspective-1000"
+      className="group relative w-full h-40 cursor-pointer"
     >
       {/* Animated background with multiple layers */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-800/60 to-black/80 
+        className="absolute inset-0 bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 
                       rounded-2xl backdrop-blur-xl border border-gray-600/30 
                       group-hover:border-gray-400/50 transition-all duration-500 
                       shadow-2xl group-hover:shadow-3xl overflow-hidden"
@@ -171,10 +172,10 @@ const SkillCard = ({ skill, delay = 0 }) => {
         <motion.div
           whileHover={{
             rotate: [0, -10, 10, 0],
-            scale: 1.02,
+            scale: 1.1,
             transition: { duration: 0.5 },
           }}
-          className={`text-4xl mb-4 ${skill.iconColor} group-hover:drop-shadow-lg 
+          className={`text-5xl md:text-6xl mb-4 ${skill.iconColor} group-hover:drop-shadow-lg 
                      transition-all duration-300 filter group-hover:brightness-110`}
         >
           {skill.icon}
@@ -183,7 +184,7 @@ const SkillCard = ({ skill, delay = 0 }) => {
         <motion.h3
           initial={{ opacity: 0.8 }}
           whileHover={{ opacity: 1 }}
-          className="text-sm font-bold text-gray-300 group-hover:text-white 
+          className="text-sm md:text-base font-bold text-gray-300 group-hover:text-white 
                      transition-all duration-300 text-center tracking-wide
                      group-hover:transform group-hover:scale-105"
         >
@@ -211,38 +212,10 @@ const SkillCard = ({ skill, delay = 0 }) => {
   );
 };
 
-// Enhanced Marquee Component
-const Marquee = ({ children, direction = "left", speed = 50 }) => {
-  return (
-    <div className="overflow-hidden relative">
-      <motion.div
-        className="flex space-x-8 whitespace-nowrap"
-        animate={{
-          x: direction === "left" ? ["0%", "-50%"] : ["-50%", "0%"],
-        }}
-        transition={{
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: speed,
-            ease: "linear",
-          },
-        }}
-        style={{ width: "200%" }}
-      >
-        <div className="flex space-x-8">
-          {children}
-          {children}
-        </div>
-      </motion.div>
-    </div>
-  );
-};
-
 export default function Skills() {
   return (
     <section
-      className="min-h-screen relative overflow-hidden py-14 px-6 md:px-20
+      className="min-h-screen relative overflow-hidden py-14 px-4 sm:px-6 md:px-20
                        bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
       {/* Enhanced animated background */}
@@ -251,20 +224,20 @@ export default function Skills() {
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
+            opacity: [0.1, 0.2, 0.1],
           }}
           transition={{ duration: 8, repeat: Infinity }}
-          className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-purple-500/20 to-pink-500/20 
+          className="absolute top-20 left-20 w-80 h-80 bg-gradient-to-r from-purple-500/10 to-pink-500/10 
                      rounded-full blur-3xl"
         />
         <motion.div
           animate={{
             scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.4, 0.2],
-            x: [0, 50, 0],
+            opacity: [0.1, 0.15, 0.1],
+            x: [0, 30, 0],
           }}
           transition={{ duration: 10, repeat: Infinity }}
-          className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-gradient-to-l from-cyan-500/20 to-blue-500/20 
+          className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-l from-cyan-500/10 to-blue-500/10 
                      rounded-full blur-3xl"
         />
         <motion.div
@@ -274,149 +247,115 @@ export default function Skills() {
           }}
           transition={{ duration: 20, repeat: Infinity }}
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                     w-80 h-80 bg-gradient-to-tr from-emerald-500/15 to-teal-500/15 
+                     w-80 h-80 bg-gradient-to-tr from-emerald-500/10 to-teal-500/10 
                      rounded-full blur-3xl"
         />
 
-        {/* Additional floating elements */}
-        {[...Array(5)].map((_, i) => (
+        {/* Floating particles */}
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
             animate={{
-              y: [0, -30, 0],
-              opacity: [0.1, 0.3, 0.1],
-              scale: [1, 1.1, 1],
+              y: [0, -25, 0],
+              opacity: [0.2, 0.6, 0.2],
+              scale: [1, 1.2, 1],
             }}
             transition={{
-              duration: 4 + i,
+              duration: 4 + i * 0.5,
               repeat: Infinity,
-              delay: i * 0.8,
+              delay: i * 0.3,
             }}
-            className={`absolute w-2 h-2 bg-white/20 rounded-full blur-sm`}
+            className="absolute w-1 h-1 bg-white/40 rounded-full blur-sm"
             style={{
-              left: `${10 + i * 20}%`,
-              top: `${20 + i * 15}%`,
+              left: `${10 + i * 12}%`,
+              top: `${15 + i * 10}%`,
             }}
           />
         ))}
       </div>
 
-      {/* Enhanced grid pattern */}
+      {/* Grid pattern overlay */}
       <div
-        className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.05)_1px,transparent_1px)] 
-                     bg-[size:60px_60px] opacity-40"
+        className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.03)_1px,transparent_1px)] 
+                     bg-[size:50px_50px] opacity-60"
       ></div>
 
       {/* Radial gradient overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.4)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]"></div>
 
-      <div className="max-w-8xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Enhanced Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-16">
           <motion.h2
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-3xl md:text-5xl font-bold text-white border-b-2 border-gray-600 pb-4 inline-block"
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-3xl md:text-5xl font-black mb-4 relative inline-block"
           >
-            My Skills
+            <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
+              My Skills
+            </span>
+            {/* Animated underline */}
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 
+                         rounded-full shadow-lg shadow-purple-500/25"
+            />
           </motion.h2>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl  max-w-3xl mx-auto leading-relaxed font-light
-                       bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent"
+            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light mt-6"
           >
             Cutting-edge technologies and frameworks I leverage to craft
             exceptional digital experiences and scalable solutions
           </motion.p>
         </div>
 
-        {/* Enhanced Skills Marquees */}
-        <div className="space-y-16">
-          {/* First Row */}
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="relative"
-          >
-            <Marquee direction="left" speed={40}>
-              {skills.map((skill, index) => (
-                <SkillCard key={index} skill={skill} delay={index * 0.1} />
-              ))}
-            </Marquee>
-          </motion.div>
-
-          {/* Enhanced Divider */}
-          <motion.div
-            initial={{ opacity: 0, scaleX: 0 }}
-            animate={{ opacity: 1, scaleX: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="flex items-center justify-center relative"
-          >
-            <div
-              className="h-px bg-gradient-to-r from-transparent via-gray-500 
-                           to-transparent w-full max-w-6xl relative"
-            >
-              <div
-                className="absolute inset-0 bg-gradient-to-r from-transparent 
-                             via-purple-400/50 to-transparent animate-pulse"
-              ></div>
-            </div>
-            <div
-              className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 
-                           bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full 
-                           animate-pulse shadow-lg shadow-purple-500/50"
-            ></div>
-          </motion.div>
-
-          {/* Second Row */}
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            <Marquee direction="right" speed={35}>
-              {skills
-                .slice()
-                .reverse()
-                .map((skill, index) => (
-                  <SkillCard key={index} skill={skill} delay={index * 0.1} />
-                ))}
-            </Marquee>
-          </motion.div>
-        </div>
+        {/* Skills Grid - Static Layout */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 lg:gap-8 mb-16"
+        >
+          {skills.map((skill, index) => (
+            <SkillCard key={index} skill={skill} delay={index * 0.1} />
+          ))}
+        </motion.div>
 
         {/* Enhanced Bottom Stats */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="mt-32 text-center"
+          className="mt-16 md:mt-24"
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
             {[
-              { number: "11+", label: "Technologies"  },
+              { number: "11+", label: "Technologies" },
               { number: "2+", label: "Years Experience" },
               { number: "50+", label: "Projects Built" },
             ].map((stat, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20, scale: 0.9 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ delay: 1.4 + index * 0.1, duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 + index * 0.1, duration: 0.6 }}
                 whileHover={{
-                  scale: 1.01,
+                  scale: 1.05,
                   y: -5,
                   transition: { duration: 0.2 },
                 }}
                 className="group bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 
-                          border border-gray-600/30 rounded-3xl p-8 backdrop-blur-xl 
+                          border border-gray-600/30 rounded-2xl md:rounded-3xl p-6 md:p-8 backdrop-blur-xl 
                           hover:border-gray-400/50 transition-all duration-500 
-                          shadow-2xl hover:shadow-3xl relative overflow-hidden cursor-pointer"
+                          shadow-2xl hover:shadow-3xl relative overflow-hidden cursor-pointer text-center"
               >
                 {/* Background glow */}
                 <div
@@ -425,14 +364,13 @@ export default function Skills() {
                 ></div>
 
                 <div className="relative z-10">
-                  <div className="text-lg mb-2">{stat.icon}</div>
                   <div
-                    className="text-4xl font-black mb-3 
+                    className="text-3xl md:text-4xl font-black mb-2 md:mb-3 
                                  bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
                   >
                     {stat.number}
                   </div>
-                  <div className="text-gray-400 text-sm font-medium tracking-wide">
+                  <div className="text-gray-400 text-sm md:text-base font-medium tracking-wide">
                     {stat.label}
                   </div>
                 </div>
