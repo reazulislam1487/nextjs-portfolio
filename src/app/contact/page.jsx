@@ -98,10 +98,6 @@ export default function Contact() {
                         reazulislam1487@gmail.com
                       </span>
                     </div>
-
-                    {/* <span className="text-gray-300 group-hover/item:text-white transition-colors duration-300">
-                      reazulislam1487@gmail.com
-                    </span> */}
                   </div>
 
                   <div className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-2xl border border-gray-700/30 hover:border-green-500/40 transition-all duration-300 group/item cursor-pointer">

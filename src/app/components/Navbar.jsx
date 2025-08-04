@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex lg:space-x-2 xl:space-x-8">
+          <div className="hidden md:flex md:space-x-4 lg:space-x-8">
             {links.map(({ href, label }) => {
               const isActive = pathname === href;
               return (
@@ -90,7 +90,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-700/50">
+        <div className="md:hidden  bg-gray-900/95 backdrop-blur-md border-t border-gray-700/50">
           <div className="px-4 pt-4 pb-6 space-y-2">
             {links.map(({ href, label }) => {
               const isActive = pathname === href;
