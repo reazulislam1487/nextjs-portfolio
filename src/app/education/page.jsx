@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Education() {
   return (
     <section
-      className="min-h-screen px-6 md:px-20 py-14 transition-colors relative overflow-hidden
+      className="min-h-screen px-4 sm:px-6 md:px-20 py-14 transition-colors relative overflow-hidden
                        bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
       {/* Grid pattern overlay */}

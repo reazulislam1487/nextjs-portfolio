@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden px-6 md:px-20 py-14 transition-colors">
+    <section className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden px-4 sm:px-6 md:px-20 py-14 transition-colors">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-gray-700/15 rounded-full blur-3xl animate-pulse"></div>

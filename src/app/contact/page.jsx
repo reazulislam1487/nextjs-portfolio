@@ -47,8 +47,6 @@ export default function Contact() {
       className="min-h-screen px-4 sm:px-6 md:px-20 py-14 transition-colors relative overflow-hidden
                  bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
-  
-
       <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.03)_1px,transparent_1px)] bg-[size:50px_50px] opacity-60"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]"></div>
 
@@ -229,7 +227,7 @@ export default function Contact() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 via-purple-700 to-cyan-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group/btn hover:from-purple-500 hover:via-purple-600 hover:to-cyan-500"
+                  className="w-full cursor-pointer px-8 py-4 bg-gradient-to-r from-purple-600 via-purple-700 to-cyan-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group/btn hover:from-purple-500 hover:via-purple-600 hover:to-cyan-500"
                 >
                   <div
                     className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500

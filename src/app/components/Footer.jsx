@@ -40,22 +40,14 @@ const socialLinks = [
       </svg>
     ),
   },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/reazulislam1487",
-    icon: (
-      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-      </svg>
-    ),
-  },
 ];
 
 const quickLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Skills", href: "/skills" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const services = [
@@ -69,7 +61,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-t from-black via-gray-900 to-gray-900 relative overflow-hidden">
+    <footer className="px-4 sm:px-6 md:px-20  bg-gradient-to-t from-black via-gray-900 to-gray-900 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-64 h-64 bg-gray-700/10 rounded-full blur-3xl animate-pulse"></div>
@@ -81,7 +73,7 @@ export default function Footer() {
 
       <div className="relative z-10">
         {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-7xl mx-auto py-16 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Brand Section */}
             <motion.div
@@ -114,7 +106,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-900 text-white font-semibold rounded-full border border-gray-600 hover:from-gray-600 hover:to-gray-800 hover:border-gray-500 transition-all duration-300 shadow-lg hover:shadow-gray-700/20"
               >
                 <span>Let's Work Together</span>

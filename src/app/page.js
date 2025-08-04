@@ -72,7 +72,7 @@ export default function Home() {
               >
                 ✦ Welcome to my portfolio ✦
               </motion.div>
-              <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight text-white">
+              <h1 className="text-3xl md:text-3xl lg:4xl xl:text-5xl font-bold leading-tight text-white">
                 <span className="bg-gradient-to-r from-white via-gray-300 to-gray-400 bg-clip-text text-transparent">
                   {typedText}
                 </span>
@@ -107,9 +107,17 @@ export default function Home() {
                 <span className="relative z-10">View Projects</span>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-gray-700 to-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
-              <button className="px-8 py-4 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white hover:shadow-lg hover:shadow-gray-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                Download Resume
-              </button>
+              <a
+                href="/Reazul_Islam_Reaz_MERN_Stack_Developer_Resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:block"
+              >
+                <button className=" px-4 py-2 lg:px-8 lg:py-4 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white hover:shadow-lg hover:shadow-gray-500/20 transition-all duration-300 transform hover:-translate-y-1">
+                  Download Resume
+                </button>
+              </a>
             </motion.div>
 
             {/* Social Icons */}
