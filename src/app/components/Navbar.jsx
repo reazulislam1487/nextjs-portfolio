@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const links = [
-  { href: "/", label: "Home" },
+  { href: "#", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold group">
+            <Link href="#" className="text-xl font-bold group">
               <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-102">
                 {/* Placeholder logo with gradient border */}
                 <div className="w-full h-full rounded-full bg-gradient-to-r from-gray-600 to-gray-800 p-1">
