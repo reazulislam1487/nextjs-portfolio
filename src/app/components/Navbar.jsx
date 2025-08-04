@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:space-x-4 lg:space-x-8">
+          <div className="hidden md:flex lg:space-x-2 xl:space-x-8">
             {links.map(({ href, label }) => {
               const isActive = pathname === href;
               return (

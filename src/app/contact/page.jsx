@@ -93,9 +93,15 @@ export default function Contact() {
                     <div className="p-3 bg-purple-500/10 rounded-xl border border-purple-500/20 group-hover/item:bg-purple-500/20 transition-colors duration-300">
                       <FiMail className="text-xl text-purple-400 group-hover/item:text-purple-300" />
                     </div>
-                    <span className="text-gray-300 group-hover/item:text-white transition-colors duration-300">
+                    <div className="flex items-center overflow-hidden">
+                      <span className="text-gray-300 group-hover/item:text-white transition-colors duration-300 whitespace-nowrap sm:text-base">
+                        reazulislam1487@gmail.com
+                      </span>
+                    </div>
+
+                    {/* <span className="text-gray-300 group-hover/item:text-white transition-colors duration-300">
                       reazulislam1487@gmail.com
-                    </span>
+                    </span> */}
                   </div>
 
                   <div className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-2xl border border-gray-700/30 hover:border-green-500/40 transition-all duration-300 group/item cursor-pointer">
