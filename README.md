@@ -8,7 +8,7 @@ This is my personal portfolio website built using **Next.js**, **Tailwind CSS**,
 
 ## 🔗 Live Site
 
-👉 [Visit My Portfolio](https://your-portfolio.vercel.app) <!-- Replace with your actual URL -->
+👉 [Visit My Portfolio](https://reazul-islam-reaz.vercel.app)
 
 ## 🚀 Tech Stack
 
@@ -22,7 +22,21 @@ This is my personal portfolio website built using **Next.js**, **Tailwind CSS**,
 - ⚡ Fast and SEO-friendly static site using Next.js
 - 🎨 Responsive and modern UI with Tailwind CSS
 - ✨ Smooth animations with Framer Motion
-- 🌗 Light-theme (Dark mode not included)
 - 📱 Mobile-first design
 - 🔗 Project showcase with live demo links
 - 📧 Contact form integration (optional)
+
+# 🙋‍♂️ About Me
+
+I’m **Reazul Islam Reaz**, a passionate **MERN Stack developer** from **Bangladesh**.  
+I built this portfolio to represent my work, skills, and passion for web development.
+
+---
+
+## 📬 Contact
+
+**Want to collaborate or hire me? Reach out!**
+
+- 📧 Email: [reazulislam1487@gmail.com](mailto:reazulislam1487@gmail.com)
+- 🔗 LinkedIn: [linkedin.com/in/reazul-islam-reaz](https://www.linkedin.com/in/reazulislam1487)
+- 💻 GitHub: [github.com/reazulislamreaz](https://github.com/reazulislam1487)
