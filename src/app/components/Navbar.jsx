@@ -7,11 +7,11 @@ import { HiMenu, HiX } from "react-icons/hi";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/skills", label: "Skills" },
-  { href: "/projects", label: "Projects" },
-  { href: "/education", label: "Education" },
-  { href: "/contact", label: "Contact" },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -20,7 +20,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="bg-black/95 backdrop-blur-md px-4 sm:px-6 md:px-20 border-b border-gray-700/50 shadow-2xl shadow-gray-900/50 sticky top-0 z-50">
+    <nav className="bg-black/95 backdrop-blur-xl px-4 sm:px-6 md:px-20 border-b border-gray-700/50 shadow-2xl shadow-gray-900/50 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto ">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

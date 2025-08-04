@@ -44,7 +44,8 @@ export default function Contact() {
 
   return (
     <section
-      className="min-h-screen px-4 sm:px-6 md:px-20 py-14 transition-colors relative overflow-hidden
+      id="contact"
+      className=" px-4 sm:px-6 md:px-20 py-20 transition-colors relative overflow-hidden
                  bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
       <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.03)_1px,transparent_1px)] bg-[size:50px_50px] opacity-60"></div>
@@ -56,14 +57,14 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto relative z-10"
       >
-        <div className="mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4 relative inline-block text-center md:text-left">
+        <div className="text-center mb-12 ">
+          <h2 className="text-3xl md:text-5xl font-black mb-2 relative inline-block">
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
               Contact Me
             </span>
-            <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full shadow-lg shadow-purple-500/25" />
           </h2>
-          <p className="text-base sm:text-lg text-gray-400 mt-4 max-w-2xl font-light text-center md:text-left mx-auto md:mx-0">
+
+          <p className="text-lg text-center md:text-xl text-gray-300 leading-relaxed font-light mt-6">
             Let's connect and discuss how we can work together on your next
             project
           </p>

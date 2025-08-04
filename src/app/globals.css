@@ -5,6 +5,7 @@
 
 html {
   transition: background-color 0.3s, color 0.3s;
+  scroll-behavior: smooth;
 }
 
 .project-swiper .swiper-button-next,

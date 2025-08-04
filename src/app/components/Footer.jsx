@@ -106,7 +106,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact"
+                href="#contact"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-900 text-white font-semibold rounded-full border border-gray-600 hover:from-gray-600 hover:to-gray-800 hover:border-gray-500 transition-all duration-300 shadow-lg hover:shadow-gray-700/20"
               >
                 <span>Let's Work Together</span>

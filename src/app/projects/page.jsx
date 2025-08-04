@@ -203,7 +203,10 @@ export default function Projects() {
   // };
 
   return (
-    <section className="min-h-screen px-4 sm:px-6 md:px-20 py-14 transition-colors relative overflow-hidden bg-gradient-to-br from-slate-950 via-gray-900 to-black">
+    <section
+      id="projects"
+      className=" px-4 sm:px-6 md:px-20 py-20 transition-colors relative overflow-hidden bg-gradient-to-br from-slate-950 via-gray-900 to-black"
+    >
       {/* Simplified static background */}
       <div className="absolute inset-0">
         <div
@@ -231,12 +234,13 @@ export default function Projects() {
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto relative z-10"
       >
-        <h2 className="text-3xl md:text-5xl font-black mb-12 relative inline-block">
-          <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
-            Featured Projects
-          </span>
-          {/* Static underline */}
-        </h2>
+        <div className="text-center mb-12 ">
+          <h2 className="text-3xl md:text-5xl font-black mb-2 relative inline-block">
+            <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
+              Featured Projects
+            </span>
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projectsData.map((project, index) => (

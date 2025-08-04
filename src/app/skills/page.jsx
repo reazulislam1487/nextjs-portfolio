@@ -136,7 +136,8 @@ const SkillCard = ({ skill }) => {
 export default function Skills() {
   return (
     <section
-      className="min-h-screen relative overflow-hidden py-14 px-4 sm:px-6 md:px-20
+      id="skills"
+      className="  relative overflow-hidden py-20 px-4 sm:px-6 md:px-20
                        bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
       {/* Simplified static background */}
@@ -172,14 +173,14 @@ export default function Skills() {
         className="max-w-7xl mx-auto relative z-10"
       >
         {/* Simplified Header */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-12 ">
           <h2 className="text-3xl md:text-5xl font-black mb-2 relative inline-block">
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
               My Skills
             </span>
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed font-light mt-6">
+          <p className="text-lg text-center md:text-xl text-gray-300 leading-relaxed font-light mt-6">
             Cutting-edge technologies and frameworks I leverage to craft
             exceptional digital experiences and scalable solutions
           </p>

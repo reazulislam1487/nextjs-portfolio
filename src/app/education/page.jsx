@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 export default function Education() {
   return (
     <section
-      className="min-h-screen px-4 sm:px-6 md:px-20 py-14 transition-colors relative overflow-hidden
+      id="education"
+      className=" px-4 sm:px-6 md:px-20 py-20 transition-colors relative overflow-hidden
                        bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
       {/* Grid pattern overlay */}
@@ -24,17 +25,15 @@ export default function Education() {
         className="max-w-7xl mx-auto relative z-10"
       >
         {/* Enhanced Header */}
-        <div className="mb-12">
-          <h2 className="text-4xl md:text-6xl font-black mb-4 relative inline-block">
-            <span
-              className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent
-                           drop-shadow-2xl"
-            >
+
+        <div className="text-center mb-12 ">
+          <h2 className="text-3xl md:text-5xl font-black mb-2 relative inline-block">
+            <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
               Education
             </span>
-            {/* Animated underline */}
           </h2>
-          <p className="text-lg text-gray-400 mt-4 max-w-2xl font-light">
+
+          <p className="text-lg text-center md:text-xl text-gray-300 leading-relaxed font-light mt-6">
             My academic journey and professional development in technology
           </p>
         </div>
