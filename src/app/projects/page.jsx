@@ -165,36 +165,36 @@ const ImageCarousel = ({ images, title, className = "" }) => {
 };
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  // const [selectedProject, setSelectedProject] = useState(null);
 
   // Close modal on escape key
-  useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.key === "Escape" && selectedProject) {
-        setSelectedProject(null);
-      }
-    };
+  // useEffect(() => {
+  //   const handleEscape = (e) => {
+  //     if (e.key === "Escape" && selectedProject) {
+  //       setSelectedProject(null);
+  //     }
+  //   };
 
-    if (selectedProject) {
-      document.addEventListener("keydown", handleEscape);
-      document.body.style.overflow = "hidden";
-    }
+  //   if (selectedProject) {
+  //     document.addEventListener("keydown", handleEscape);
+  //     document.body.style.overflow = "hidden";
+  //   }
 
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "unset";
-    };
-  }, [selectedProject]);
+  //   return () => {
+  //     document.removeEventListener("keydown", handleEscape);
+  //     document.body.style.overflow = "unset";
+  //   };
+  // }, [selectedProject]);
 
-  const handleViewDetails = (project, e) => {
-    e?.stopPropagation();
-    setSelectedProject(project);
-  };
+  // const handleViewDetails = (project, e) => {
+  //   e?.stopPropagation();
+  //   setSelectedProject(project);
+  // };
 
-  const closeModal = (e) => {
-    e?.stopPropagation();
-    setSelectedProject(null);
-  };
+  // const closeModal = (e) => {
+  //   e?.stopPropagation();
+  //   setSelectedProject(null);
+  // };
 
   // const handleModalBackdropClick = (e) => {
   //   if (e.target === e.currentTarget) {
@@ -255,13 +255,13 @@ export default function Projects() {
                              opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               ></div>
 
-              <div className="relative">
+              <div className="relative ">
                 <ImageCarousel
                   images={project.images}
                   title={project.title}
-                  className="h-56 sm:h-64"
+                  className="h-56 sm:h-64 "
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0  bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
               <div className="p-6 relative z-10">
@@ -277,7 +277,7 @@ export default function Projects() {
                   {project.features.map((feature, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-purple-500/20 border border-purple-500/30 text-purple-300 rounded-full text-sm font-medium"
+                      className="px-3 py-1  bg-purple-500/20 border border-purple-500/30 text-purple-300 rounded-full text-sm font-medium"
                     >
                       {feature}
                     </span>
