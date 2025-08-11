@@ -69,114 +69,13 @@ export default function Footer() {
       </div>
 
       {/* Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(75,85,99,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(75,85,99,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+      <div className="absolute inset-0 bg-black/95"></div>
 
       <div className="relative z-10">
         {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto py-16 ">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Brand Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="lg:col-span-2"
-            >
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-gray-600 to-gray-800 p-[2px]">
-                  <div className="w-full h-full rounded-lg bg-black flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">R</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white">
-                    Reazul Islam Reaz
-                  </h3>
-                  <p className="text-gray-400 text-sm">MERN Stack Developer</p>
-                </div>
-              </div>
-
-              <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-                Passionate about creating innovative web solutions that solve
-                real-world problems. Let's build something amazing together.
-              </p>
-
-              {/* CTA Button */}
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="#contact"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-900 text-white font-semibold rounded-full border border-gray-600 hover:from-gray-600 hover:to-gray-800 hover:border-gray-500 transition-all duration-300 shadow-lg hover:shadow-gray-700/20"
-              >
-                <span>Let's Work Together</span>
-                <svg
-                  className="ml-2 w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </motion.a>
-            </motion.div>
-
-            {/* Quick Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <h4 className="text-lg font-semibold text-white mb-6">
-                Quick Links
-              </h4>
-              <ul className="space-y-3">
-                {quickLinks.map((link, index) => (
-                  <li key={index}>
-                    <a
-                      href={link.href}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
-                    >
-                      <span className="w-1 h-1 bg-gray-600 rounded-full mr-3 group-hover:bg-gray-400 transition-colors duration-300"></span>
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Services */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <h4 className="text-lg font-semibold text-white mb-6">
-                Services
-              </h4>
-              <ul className="space-y-3">
-                {services.map((service, index) => (
-                  <li key={index}>
-                    <span className="text-gray-400 flex items-center">
-                      <span className="w-1 h-1 bg-gray-600 rounded-full mr-3"></span>
-                      {service}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-        </div>
 
         {/* Social Links Section */}
-        <div className="border-t border-gray-700/50">
+        {/* <div className="border-t border-gray-700/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -206,43 +105,23 @@ export default function Footer() {
               </div>
             </motion.div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="">
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="text-gray-400 text-sm"
+                className="text-gray-400 text-center text-sm"
               >
                 © {currentYear} Reazul Islam Reaz. All rights reserved.
               </motion.p>
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="flex items-center space-x-6 text-sm text-gray-400"
-              >
-                <a
-                  href="#privacy"
-                  className="hover:text-white transition-colors duration-300"
-                >
-                  Privacy Policy
-                </a>
-                <span className="w-1 h-1 bg-gray-600 rounded-full"></span>
-                <a
-                  href="#terms"
-                  className="hover:text-white transition-colors duration-300"
-                >
-                  Terms of Service
-                </a>
-              </motion.div>
+            
             </div>
           </div>
         </div>
