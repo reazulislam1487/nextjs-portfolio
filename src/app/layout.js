@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
           {children}
           <About></About>
           <Skills></Skills>
-          <Projects></Projects>
           <Education></Education>
+          <Projects></Projects>
           <Contact></Contact>
           <Footer />
         </Providers>
