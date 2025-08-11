@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:space-x-4 lg:space-x-8">
+          <div className="hidden md:flex md:space-x-2 lg:space-x-4 xl:space-x-8">
             {links.map(({ href, label }) => {
               const isActive = pathname === href;
               return (
@@ -69,7 +69,7 @@ export default function Navbar() {
               download
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:block "
+              className="hidden lg:block "
             >
               <button className="px-4 py-2  lg:px-6 lg:py-3 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white hover:shadow-lg hover:shadow-gray-500/20 transition-all duration-300 transform">
                 Resume
