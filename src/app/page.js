@@ -101,7 +101,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex gap-4 pt-4"
+              className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4 pt-4"
             >
               <button className="group relative cursor-pointer px-8 py-4 rounded-full bg-gradient-to-r from-gray-800 to-black border border-gray-600 text-white font-semibold hover:shadow-2xl hover:shadow-gray-700/25 hover:border-gray-400 transition-all duration-300 transform hover:-translate-y-1">
                 <span className="relative z-10">View Projects</span>
@@ -112,9 +112,9 @@ export default function Home() {
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:block"
+                // className="hidden sm:block"
               >
-                <button className=" px-4 py-2 lg:px-8 lg:py-4 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white hover:shadow-lg hover:shadow-gray-500/20 transition-all duration-300 transform hover:-translate-y-1">
+                <button className=" px-8 py-4 rounded-full w-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white hover:shadow-lg hover:shadow-gray-500/20 transition-all duration-300 transform hover:-translate-y-1">
                   Download Resume
                 </button>
               </a>
