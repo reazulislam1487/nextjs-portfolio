@@ -72,7 +72,6 @@ export default function Footer() {
       <div className="absolute inset-0 bg-black/95"></div>
 
       <div className="relative z-10">
-        {/* Main Footer Content */}
 
         {/* Social Links Section */}
         {/* <div className="border-t border-gray-700/50">
