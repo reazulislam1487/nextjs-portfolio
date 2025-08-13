@@ -73,38 +73,7 @@ export default function Footer() {
 
       <div className="relative z-10">
 
-        {/* Social Links Section */}
-        {/* <div className="border-t border-gray-700/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center mb-8"
-            >
-              <h4 className="text-lg font-semibold text-white mb-6">
-                Connect With Me
-              </h4>
-              <div className="flex justify-center space-x-6">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={index}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    whileTap={{ scale: 0.9 }}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-full bg-gray-800/50 border border-gray-600 text-gray-400 hover:text-white hover:border-gray-500 hover:bg-gray-700/50 transition-all duration-300 backdrop-blur-sm"
-                    aria-label={social.name}
-                  >
-                    {social.icon}
-                  </motion.a>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div> */}
+       
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700/30">
