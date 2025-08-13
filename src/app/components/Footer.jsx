@@ -6,7 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="px-4 sm:px-6 md:px-20  bg-gradient-to-t from-black via-gray-900 to-gray-900 relative overflow-hidden">
+    <footer className="px-4 sm:px-6 md:px-20 bg-black backdrop-blur-xl  ">
       {/* Bottom Bar */}
       <div className="border-t border-gray-700/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
