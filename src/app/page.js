@@ -108,7 +108,7 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-gray-700 to-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <a
-                href="/Reazul_Islam_Reaz_MERN_Stack_Developer_Resume.pdf"
+                href="/Reazul_Islam_Reaz_Backend_Developer_Resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
@@ -194,7 +194,7 @@ export default function Home() {
                   <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                     <div className="text-6xl text-gray-600">
                       <Image
-                        src="/reazul-profile.jpg"
+                        src="/reaz.png"
                         alt="Description of image"
                         width={500}
                         height={300}

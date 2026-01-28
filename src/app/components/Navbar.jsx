@@ -65,7 +65,7 @@ export default function Navbar() {
           <div className="flex items-center ">
             {/* Resume */}
             <a
-              href="/Reazul_Islam_Reaz_MERN_Stack_Developer_Resume.pdf"
+              href="/Reazul_Islam_Reaz_Backend_Developer_Resume.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
