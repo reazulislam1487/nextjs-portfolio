@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const texts = [
-  "MERN Stack Developer passionate about clean code.",
-  "Responsive design enthusiast.",
-  "Building full-stack web applications.",
+  "Full Stack Backend Developer focused on scalable and clean code.",
+  "Backend Engineer experienced with Node.js, Express, NestJs and MongoDB & PostgreSQL.",
+  "Building high-performance, SEO-friendly web applications with React and Next.js.",
 ];
 
 export default function Home() {
