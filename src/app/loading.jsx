@@ -41,9 +41,9 @@ export default function Loading() {
 
         {/* Title + subtitle */}
         <div className="text-center">
-          <h1 className="text-balance text-2xl font-semibold text-white/95 md:text-3xl">
+          <h2 className="text-balance text-2xl font-semibold text-white/95 md:text-3xl">
             Preparing your experience
-          </h1>
+          </h2>
           <p className="mt-2 text-white/60">
             Loading portfolio content…
             <span className="sr-only">Please wait</span>
