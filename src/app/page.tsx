@@ -72,7 +72,7 @@ export default function Home() {
                 </h1>
                 
                 {/* Text Slider */}
-                <div className="h-10 relative overflow-hidden flex items-center">
+                <div className="h-12 relative overflow-hidden flex items-center">
                   <AnimatePresence mode="wait">
                     <motion.p
                       key={sliderIndex}

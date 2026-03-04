@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full bg-zinc-950/70 backdrop-blur-xl border-b border-zinc-800/50 top-0 z-50 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 md:px-20">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
