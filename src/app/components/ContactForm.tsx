@@ -131,7 +131,7 @@ export default function ContactForm() {
             className="w-full cursor-pointer px-8 py-4 bg-zinc-100 text-zinc-950 font-semibold rounded-xl shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:bg-white transition-all duration-300 relative overflow-hidden group/btn"
           >
             <span className="relative z-10 flex items-center justify-center gap-3">
-              Transmit Payload
+              Send Message
               <motion.span
                 animate={{ x: [0, 4, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
