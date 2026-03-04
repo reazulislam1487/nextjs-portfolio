@@ -31,7 +31,9 @@ export default function ContactForm() {
           form.current?.reset();
         },
         (error) => {
-          console.error("Email error:", error);
+          console.error("EmailJS Error:", error);
+          if (error.text) console.error("Error Text:", error.text);
+          console.dir(error);
           Swal.fire({
             icon: "error",
             title: "Oops...",
