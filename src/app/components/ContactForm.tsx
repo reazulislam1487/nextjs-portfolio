@@ -1,11 +1,15 @@
 "use client";
-import React, { useRef, type FormEvent } from "react";
+import React, { useRef, useEffect, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    emailjs.init("vh3xBQbYnuH1mKR3J");
+  }, []);
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
@@ -14,10 +18,9 @@ export default function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_zybi9ip",
-        "template_mcd3o3c",
-        form.current,
-        "vh3xBQbYnuH1mKR3J"
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        form.current
       )
       .then(
         () => {
@@ -32,12 +35,11 @@ export default function ContactForm() {
         },
         (error) => {
           console.error("EmailJS Error:", error);
-          if (error.text) console.error("Error Text:", error.text);
-          console.dir(error);
+
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Failed to send message. Please try again later.",
+            text: error?.text || "Failed to send message. Please try again later.",
             confirmButtonColor: "#DC2626",
           });
         }
