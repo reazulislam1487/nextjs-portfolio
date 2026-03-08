@@ -140,7 +140,7 @@ export default function Home() {
                 <motion.a
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  href="https://github.com/reazulislam1487"
+                  href="https://github.com/reazulislamreaz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 text-gray-400 hover:text-white hover:border-white/20 hover:bg-white/[0.08] transition-all duration-300 backdrop-blur-md shadow-lg hover:shadow-emerald-500/10"
@@ -156,7 +156,7 @@ export default function Home() {
                 <motion.a
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  href="https://www.linkedin.com/in/reazulislam1487"
+                  href="https://www.linkedin.com/in/reazulislamreaz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 text-gray-400 hover:text-white hover:border-white/20 hover:bg-blue-600/20 transition-all duration-300 backdrop-blur-md shadow-lg hover:shadow-blue-500/10"
@@ -172,7 +172,7 @@ export default function Home() {
                 <motion.a
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  href="mailto:reazulislam1487@gmail.com"
+                  href="mailto:reazul.dev@gmail.com"
                   className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 text-gray-400 hover:text-white hover:border-white/20 hover:bg-emerald-600/20 transition-all duration-300 backdrop-blur-md shadow-lg hover:shadow-emerald-500/10"
                 >
                   <svg

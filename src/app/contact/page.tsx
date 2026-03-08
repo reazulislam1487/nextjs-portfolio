@@ -47,7 +47,7 @@ export default function Contact() {
                   </div>
                   <div className="flex items-center overflow-hidden">
                     <span className="text-zinc-300 group-hover/item:text-white transition-colors duration-300 whitespace-nowrap sm:text-base">
-                      reazulislam1487@gmail.com
+                      reazul.dev@gmail.com
                     </span>
                   </div>
                 </a>
@@ -86,7 +86,7 @@ export default function Contact() {
                   </span>
                   <div className="flex items-center gap-4">
                     <a
-                      href="https://github.com/reazulislam1487"
+                      href="https://github.com/reazulislamreaz"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-zinc-950/50 rounded-xl border border-zinc-800/50 hover:border-zinc-500 transition-all duration-300 text-zinc-400 hover:text-white shadow-lg hover:shadow-emerald-500/5"
@@ -94,7 +94,7 @@ export default function Contact() {
                       <FaGithub className="text-xl" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/reazulislam1487"
+                      href="https://www.linkedin.com/in/reazulislamreaz"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-blue-600/10 rounded-xl border border-blue-500/20 hover:border-blue-400/50 hover:bg-blue-600/20 transition-all duration-300 text-blue-400 hover:text-blue-300 shadow-lg hover:shadow-blue-500/10"
