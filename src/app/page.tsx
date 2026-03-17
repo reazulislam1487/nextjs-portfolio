@@ -120,7 +120,7 @@ export default function Home() {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/Reazul_Islam_Reaz_Backend_Developer_Resume.pdf"
+                  href="/Reazul_Islam_Reaz_Resume.pdf"
                   download
                   target="_blank"
                   rel="noopener noreferrer"

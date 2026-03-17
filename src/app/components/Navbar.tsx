@@ -66,7 +66,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             {/* Resume */}
             <a
-              href="/Reazul_Islam_Reaz_Backend_Developer_Resume.pdf"
+              href="/Reazul_Islam_Reaz_Resume.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
@@ -112,7 +112,7 @@ export default function Navbar() {
             })}
             
             <a
-              href="/Reazul_Islam_Reaz_Backend_Developer_Resume.pdf"
+              href="/Reazul_Islam_Reaz_Resume.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
