@@ -9,7 +9,7 @@ interface SectionProps {
 
 export default function Section({ id, children, className = "" }: SectionProps) {
   return (
-    <section id={id} className={`py-24 px-4 sm:px-6 md:px-20 relative z-10 ${className}`}>
+    <section id={id} className={`py-24 px-6 sm:px-8 md:px-20 relative z-10 ${className}`}>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

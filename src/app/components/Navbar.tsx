@@ -91,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-zinc-950/95 backdrop-blur-md border-t border-zinc-900 shadow-2xl">
+        <div className="md:hidden bg-zinc-950 border-t border-zinc-900 shadow-2xl relative z-50">
           <div className="px-4 pt-4 pb-6 space-y-1">
             {links.map(({ href, label }) => {
               const isActive = pathname === href;

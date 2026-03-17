@@ -188,10 +188,10 @@ export default function Skills() {
         {/* Frontend Skills Grid */}
         <div className="mb-14">
           <div className="flex items-center gap-4 mb-8">
-            <h3 className="text-2xl font-bold text-zinc-200 tracking-tight">Frontend Development</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-zinc-200 tracking-tight">Frontend Development</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-zinc-800 to-transparent"></div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
             {frontendSkills.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
             ))}
@@ -201,10 +201,10 @@ export default function Skills() {
         {/* Backend Skills Grid */}
         <div className="mb-14">
           <div className="flex items-center gap-4 mb-8">
-            <h3 className="text-2xl font-bold text-zinc-200 tracking-tight">Backend Development</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-zinc-200 tracking-tight">Backend Development</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-zinc-800 to-transparent"></div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
             {backendSkills.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
             ))}
@@ -214,10 +214,10 @@ export default function Skills() {
         {/* Architecture & Databases Skills Grid */}
         <div className="mb-14">
           <div className="flex items-center gap-4 mb-8">
-            <h3 className="text-2xl font-bold text-zinc-200 tracking-tight">Architecture & Databases</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-zinc-200 tracking-tight">Architecture & Databases</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-zinc-800 to-transparent"></div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
             {architectureDatabaseSkills.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
             ))}
@@ -227,10 +227,10 @@ export default function Skills() {
         {/* Advanced Technologies Grid */}
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <h3 className="text-2xl font-bold text-zinc-200 tracking-tight">Advanced Technologies</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-zinc-200 tracking-tight">Advanced Technologies</h3>
             <div className="flex-1 h-px bg-gradient-to-r from-zinc-800 to-transparent"></div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
             {advancedTechnologies.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
             ))}

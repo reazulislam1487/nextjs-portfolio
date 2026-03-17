@@ -180,7 +180,7 @@ export default function Projects() {
     <Section id="projects" className="bg-black/20">
       <SectionHeader title="Featured Projects" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         {projectsData.map((project, index) => (
           <motion.div
             key={index}
@@ -223,7 +223,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap gap-4 mt-auto pt-6 border-t border-zinc-800/50">
+              <div className="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-zinc-800/50">
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
